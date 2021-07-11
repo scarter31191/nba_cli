@@ -21,4 +21,8 @@ class Team
     def self.find_by_name(name)
         self.all.select {|team| team.name.downcase == name}
     end
+
+    # def self.first_three
+    #     @@all[0..2]
+    # end
 end
